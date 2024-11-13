@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrega Final- Parcial 3</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Declaracion de scrips jquery y adicionales -->
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="jquery/jquery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="jquery/jquery.mobile-1.3.0.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -12,7 +23,317 @@
     </header>
 
     <main>
-      <p>Contenido de la página.</p>
+      <div data-role="page" id="inicio">
+        <div data-role="header" data-theme="d">
+          <h1>UNIVERSIDAD DE SANTANDER</h1>
+        </div>
+        <!-- /header -->
+
+        <div data-role="content">
+          <center>
+            <img
+              src="img/odpcs123.gif"
+              style="border-radius: 5px; width: 360px"
+            />
+            <h2>Organización de Computadores</h2>
+          </center>
+          <p>
+            Sistema de apoyo interactivo para la materia de Organización de
+            Computadores. A través de este menú de opciones, podrán explorar y
+            profundizar en los diferentes conceptos que se han abordado en
+            clase. El objetivo es proporcionar un entorno donde puedan elegir
+            qué temas revisar y reforzar según sus necesidades académicas.
+          </p>
+          <center>
+            <a
+              href="#menu"
+              data-role="button"
+              data-icon="check"
+              data-iconpos="right"
+              data-theme="d"
+              data-inline="true"
+            >
+              INICIAR
+            </a>
+          </center>
+        </div>
+        <!-- /content -->
+      </div>
+      <!-- /page -->
+      <!-- End of first page -->
+
+      <!-- Start of second page -->
+      <div data-role="page" id="menu">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li>
+                <a
+                  href="#inicio"
+                  data-role="button"
+                  data-icon="home"
+                  data-iconpos="left"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <!-- /header -->
+        <div data-role="content" data-theme="d">
+          <center>
+            <h1>Menú</h1>
+          </center>
+          <ul data-role="listview" data-inset="false" data-filter="false">
+            <li>
+              <a href="#pag1"
+                >Estructura y Funcionamiento de la Máquina Abacus</a
+              >
+            </li>
+            <li>
+              <a href="#pag2">Características de la Máquina Super Abacus</a>
+            </li>
+            <li><a href="#pag3">Arquitectura de Von Neumann</a></li>
+            <li><a href="#pag4">Memoria Principal y Memoria Secundaria</a></li>
+            <li><a href="#pag5">Unidades de Almacenamiento</a></li>
+            <li><a href="#pag6">Ciclo de Instrucción del Procesador</a></li>
+            <li><a href="#pag7">Evaluación y Pruebas</a></li>
+            <li>
+              <a href="#pag8"
+                >Tendencias Futuras en la Organización de Computadores</a
+              >
+            </li>
+            <!--<li><a href="#pag9">-_-</a></li>-->
+          </ul>
+        </div>
+        <!-- /content -->
+      </div>
+      <!-- /page -->
+      <!-- End of second page -->
+
+      <div data-role="page" id="pag1">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img src="img/" style="border-radius: 5px; width: 360px" />
+            <h2>Estructura y Funcionamiento de la Máquina Abacus</h2>
+          </center>
+          <p>
+            Explora los principios fundamentales de la Máquina Abacus, sus
+            características y cómo realiza operaciones básicas a través del
+            acumulador. Aquí podrás repasar el concepto de operaciones contra el
+            acumulador y la estructura de una máquina de una sola dirección.
+          </p>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag2">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img src="img/" style="border-radius: 5px; width: 360px" />
+            <h2>Características de la Máquina Super Abacus</h2>
+          </center>
+          <p>
+            Descubre cómo la Super Abacus, una máquina de tercera generación,
+            avanza en el uso de registros generales para operaciones aritméticas
+            y de direccionamiento. Se abordan también aspectos como el ciclo de
+            memoria y las diferencias con la Máquina Abacus.
+          </p>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag3">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img src="img/" style="border-radius: 5px; width: 360px" />
+            <h2>Arquitectura de Von Neumann</h2>
+          </center>
+          <p>
+            Esta opción profundiza en la Arquitectura de Von Neumann, su impacto
+            en el diseño de computadores modernos, y cómo sus principios se
+            aplican a las arquitecturas actuales. Los estudiantes podrán
+            analizar el ciclo de instrucción, los registros y la estructura
+            unificada de memoria.
+          </p>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag4">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img
+              src="img/odpcs12345ram.gif"
+              style="border-radius: 5px; width: 360px"
+            />
+            <h2>Memoria Principal y Memoria Secundaria</h2>
+          </center>
+          <p>
+            Estudia las diferencias entre memoria principal y memoria
+            secundaria. Aprende cómo se gestionan los datos, las características
+            de cada tipo de memoria, y cómo influyen en el rendimiento del
+            sistema.
+          </p>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag5">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img
+              src="img/odpcs12345discos.jpg"
+              style="border-radius: 5px; width: 360px"
+            />
+            <h2>Unidades de Almacenamiento</h2>
+          </center>
+          <p>
+            Revisa los diferentes tipos de unidades de almacenamiento
+            disponibles, incluyendo discos duros, SSDs, y otros medios. Aprende
+            sobre las velocidades de acceso, el tiempo de latencia y su
+            relevancia en el rendimiento global del sistema.
+          </p>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag6">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img
+              src="img/odpcs12345.gif"
+              style="border-radius: 5px; width: 360px"
+            />
+            <h2>Ciclo de Instrucción del Procesador</h2>
+          </center>
+          <p>
+            Aprende sobre las etapas del ciclo de instrucción en el procesador,
+            desde la búsqueda de instrucciones hasta la ejecución de
+            operaciones. Se ofrece una descripción detallada de cómo el
+            procesador coordina estas fases para realizar cálculos.
+          </p>
+          <center>
+            <img
+              src="img/odpcs1234.gif"
+              style="border-radius: 5px; width: 360px"
+            />
+          </center>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag7">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img
+              src="img/odpcs1.gif"
+              style="border-radius: 5px; width: 360px"
+            />
+            <h2>Evaluación y Pruebas</h2>
+          </center>
+          <p>
+            Accede a una serie de pruebas y evaluaciones diseñadas para medir tu
+            comprensión sobre los temas de la materia. Estas pruebas incluirán
+            ejercicios prácticos de apareamiento, preguntas de opción múltiple y
+            problemas de análisis.
+          </p>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag8">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img
+              src="img/odpcs12.gif"
+              style="border-radius: 5px; width: 360px"
+            />
+            <h2>Tendencias Futuras en la Organización de Computadores</h2>
+          </center>
+          <p>
+            Conoce las tendencias tecnológicas que están dando forma al futuro
+            de la organización de computadores, como el procesamiento en
+            paralelo y las nuevas formas de memoria. Se exploran conceptos
+            emergentes que podrían ser clave en los próximos años.
+          </p>
+        </div>
+      </div>
+
+      <div data-role="page" id="pag9">
+        <div data-role="header" data-theme="d">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#menu" data-icon="grid"></a></li>
+            </ul>
+          </div>
+          <!-- /navbar -->
+        </div>
+        <div data-role="content" data-theme="d">
+          <center>
+            <img src="img/" style="border-radius: 5px; width: 360px" />
+            <h2></h2>
+          </center>
+          <p>Next</p>
+        </div>
+      </div>
     </main>
 
     <footer>
