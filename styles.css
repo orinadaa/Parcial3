@@ -1,18 +1,48 @@
+/* Colores de la paleta */
+:root {
+  --color1: #cc95ff;
+  --color2: #b382df;
+  --color3: #9970bf;
+  --color4: #805d9f;
+  --color5: #664b80;
+  --color6: #4d3860;
+  --color7: #332540;
+  --color8: #1a1320;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  header,
-  footer {
-    background-color: #f2f2f2;
-    padding: 10px;
-    text-align: center;
-  }
-  main {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color8); /* Color oscuro de fondo */
+  color: white;
+}
+
+header {
+  background-color: var(--color1); /* Color más claro para el encabezado */
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color6); /* Color intermedio para el contenido */
+}
+
+footer {
+  background-color: var(--color4); /* Color intermedio para el pie de página */
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
